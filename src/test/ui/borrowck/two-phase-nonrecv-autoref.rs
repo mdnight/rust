@@ -1,9 +1,6 @@
 // revisions: nll
 //[nll]compile-flags: -Z borrowck=mir
 
-//[g2p]compile-flags: -Z borrowck=mir -Z two-phase-beyond-autoref
-// the above revision is disabled until two-phase-beyond-autoref support is better
-
 // This is a test checking that when we limit two-phase borrows to
 // method receivers, we do not let other kinds of auto-ref to leak
 // through.
